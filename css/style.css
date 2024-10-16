@@ -1,13 +1,16 @@
 body {
     background-color:#ff0;
     font-family: 'Jockey One';font-size: 22px;
-
 }
 
+
 /* The menu to the left */
-nav {
-    background-color: #ac76ff;
-    height: 50px;
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    text-transform: uppercase;
+    color: white;
 }
 
 .burger_menu {
@@ -15,30 +18,55 @@ nav {
 }
 
 .menu-text {
-    text-transform: uppercase;
-    color: white;
-    text-align: center;
     
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
 }
 
 /* Top section */
+
+section {
+    background-color: black;
+    
+
+}
 .heading_1 {
     text-transform: uppercase;
     color: #ac76ff;
+    margin-bottom: 0px;
+    margin-left: 50%;
+    position:static;
+    font-weight: normal;
+    
+    
+    
 }
 
 .heading_2 {
     text-transform: uppercase;
     color: #00ff39;
+    font-size: 3em;
+    margin-top: -30px;
+    margin-bottom: -40px;
+    text-align: center;
+    font-weight: normal;
+    
 }
 
 .heading_3 {
     text-transform: uppercase;
     color: #fff136;
+    margin-top: 0px;
+    text-align: center;
+    font-weight: normal;
 }
 
 .top_text_1 {
     color: #00ff39;
+    background-color:aquamarine;
+    padding-left: 10px;
 }
 
 .top_text_2 {
@@ -200,3 +228,13 @@ footer a {
         color: white;
         margin: 10px
 }
+
+@media screen and (min-width:640px) {
+/* The menu to the left */
+nav {
+    
+    background-color: green;
+    
+    
+}
+
