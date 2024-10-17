@@ -1,16 +1,17 @@
 body {
     background-color: aqua;
+}
 
 main {
-    border: 2px solid greenyellow;
+    border: 2px solid green;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 16px;
-    }
+}
 
 header {
     flex-direction: column;
-    }
+}
 
 .page1 {
     grid-column: span 11;
