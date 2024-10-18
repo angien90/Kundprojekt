@@ -1,8 +1,14 @@
 body {
-    background-color:#ff0;
-    font-family: 'Jockey One';font-size: 22px;
+  background-color:#ff0;
+  font-family: 'Jockey One';font-size: 22px;
+  padding-left: 8px;
+  padding-right: 8px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
   }
-  
+
 /* The menu to the left */
 header {
     display: flex;
@@ -10,63 +16,96 @@ header {
     background-color: black;
     text-transform: uppercase;
     color: white;
-  }
+    font-weight: normal; 
+    }
   
   .burger_menu {
     
   }
-  
-  .menu_text {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0px;
+
+  .menu_heading {
+
+
   }
 
-/* Top section */
-  .top {
+/* Top section (Page 1 section 1) */
+.page1 {
     background-color: black;
-  }
+    margin-top: -30px;
+    }
 
   .heading_1 {
     text-transform: uppercase;
     color: #ac76ff;
-    margin-bottom: 0px;
+    margin-bottom: 3px;
     margin-left: 50%;
     position:static;
     font-weight: normal; 
+    font-size: 2rem;
   }
   
   .heading_2 {
     text-transform: uppercase;
     color: #00ff39;
-    font-size: 3em;
-    margin-top: -30px;
-    margin-bottom: -40px;
+    font-size: 5rem;
+    margin-top: -25px;
+    margin-bottom: -30px;
     text-align: center;
     font-weight: normal;
+    position:sticky;
+    z-index: 2;
   }
   
   .heading_3 {
     text-transform: uppercase;
     color: #fff136;
     margin-top: 0px;
-    text-align: center;
+    margin-right: 43%;
+    text-align: right;
+    position: relative;
     font-weight: normal;
+    font-size: 2rem;
+    z-index: 1;
+    
   }
   
   .text_top {
     color: #00ff39;
-    background-color:aquamarine;
+    font-size: 2rem;
     padding-left: 10px;
+    padding-right: 10px;
+    font-weight: lighter;
   }
+
   
+  /* Top section (Page 1 section 2) */
+  .bottom {
+    background-color: white;
+  }
+
+  .lettuce {
+    max-width: 100%;
+    height: auto;
+  }
+
   .text_bottom {
     color: #ac76ff;
-    background-color: white;
+    font-size: 2rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   
   .explore_more {
     text-transform: uppercase;
+    font-weight: normal;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .section_1 {
@@ -74,27 +113,47 @@ header {
   }
   
   /* Menu */
-  .food {
-    margin-top: 15px;
+  /* Page 2 (Section 1) */
+  .top_page2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    height: 300px;
-    width: 33,33%;
-    justify-content: stretch;  
   }
-  
+
+  .food {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+
+  /* Page 2 (Section 2) */
   main article {
     border: 1px solid black;
     background-color: white;
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 50px;
+    flex-direction: column;
+    height: 80px;
+    
   }
   
-  .menu_heading {
+.menu_heading {
+  margin-top: 0px;
+  position: relative;
+}
+
+.menu_description {
+  align-items: center;
+
+}
+
+ /* .menu_heading {
     text-transform: uppercase;
     margin-left: 10px;
     width: 300px;
+    margin-top: 0px;
   }
   
   .menu_icon_1 {
@@ -119,9 +178,10 @@ header {
   .menu_decription {
     font-family: 'Roboto Condensed';font-size: 22px;
     font-size: 0,5em;
+    align-items: center;
     
     
-  }
+  } */
   
   /* Form for booking a table */
   .book_your_table {
@@ -172,13 +232,15 @@ header {
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content:space-between;
+
   }
   
   .cookies {
     font-family: 'Roboto Condensed';font-size: 22px;
     font-size: 1rem;
     margin-left: 10px;
+
   }
   
   .decline_button {
