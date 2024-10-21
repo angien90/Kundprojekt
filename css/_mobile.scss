@@ -130,74 +130,87 @@ header {
   }
 
   /* Page 2 (Section 2) */
-  main article {
-    border: 1px solid black;
+  article {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     background-color: white;
     display: flex;
     flex-direction: column;
-    height: 80px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+    line-height: 0px;
+    padding-left: 10px; 
     
   }
   
-.menu_heading {
-  margin-top: 0px;
-  position: relative;
-}
-
-.menu_description {
-  align-items: center;
-
-}
-
- /* .menu_heading {
+  .menu_heading {
     text-transform: uppercase;
-    margin-left: 10px;
-    width: 300px;
-    margin-top: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
-  
+
+  .menu_decription {
+    font-family: 'Roboto Condensed';font-size: 22px;
+    font-size: 1rem;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
   .menu_icon_1 {
     text-transform: uppercase;
     font-family: 'Courier Prime';font-size: 22px;
     font-size: 1rem;
     background-color: #ac76ff;
+    
   }
   
   .menu_icon_2 {
     text-transform: uppercase;
     font-family: 'Courier Prime';font-size: 22px;
+    font-size: 1rem;
     background-color: #00ff39;
   }
   
   .menu_icon_3 {
     text-transform: uppercase;
     font-family: 'Courier Prime';font-size: 22px;
+    font-size: 1rem;
     background-color: #fff136;
   }
   
-  .menu_decription {
-    font-family: 'Roboto Condensed';font-size: 22px;
-    font-size: 0,5em;
-    align-items: center;
-    
-    
-  } */
-  
   /* Form for booking a table */
+  form {
+    background-color: #00ff39;
+    border-left: 10px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px; 
+    margin-top: 10px;
+  }
+
   .book_your_table {
     text-transform: uppercase;
     font-size: 3rem;
+    margin-top: 10px;
   }
   
   lable {
     text-transform: uppercase;
     font-size: 1,5em;
-    
   }
   
+  input {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 200px;
+  }
+
   .cancle_button {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1,5em;
     background-color: #ac76ff;
     border-style: none;
     font-family: 'Jockey One';
@@ -208,25 +221,48 @@ header {
   
   .request_button {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1,5em;
     background-color: #fff136;
     border-style: none;
     font-family: 'Jockey One';
     border-radius: 10px;
     width: 100px;
     height: 30px;
+    display: row;
+    justify-items: center;
   }
   
   /* Contact information */
+  
+
   .book_table {
-    background-image: url("http://127.0.0.1:5500/assets/photos/restaurant_table.jpg");
-    width: 300px;
-    height: 200px;
+    background-image: url("../assets/photos/restaurant_table.jpg");
+    width: auto;
+    height: auto;
+    background-size: cover;
     color: #3da7d5;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-items: center; 
   }
   
+  .bg-image {
+    
+  }
+
+
+
+  span.material-symbols-outlined {
+    font-size: 2em;
+    margin-right: 20px;
+  }
+
+  .icon_text {
+    display: flex;
+    align-items: center;
+  }
+
   .book_table_footer {
     background-color: #ac76ff;
     color: white;
@@ -281,5 +317,3 @@ header {
         color: white;
         margin: 10px
   }
-  
- 
