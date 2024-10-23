@@ -1,71 +1,148 @@
 body {
   background-color:#ff0;
-  font-family: 'Jockey One';font-size: 22px;
+  font-family: 'Jockey One';
+  font-size: 22px;
   padding-left: 8px;
   padding-right: 8px;
-  margin-top: 0px;
-  margin-bottom: 10px;
   margin-left: 2px;
   margin-right: 2px;
   }
 
-/* The menu to the left */
+/* Restaurant name */
 header {
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
+    background-color:black;
     text-transform: uppercase;
     color: white;
+    text-align: center;
+    width:90vw;
+    position: fixed; 
+}
+
+  .restaurant {
+    align-content: center;
     font-weight: normal; 
-    }
+    margin: 10px;
+  }
   
+
+/*Burger meny */
   .burger_menu {
-    
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 0;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    z-index: 2;
+    pointer-events: none;
   }
 
-  .menu_heading {
-
-
+  .line {
+    display: block; 
+    width: 25px;
+    height: 3px;
+    background-color:#fff136;
+    border-radius: 6px;
+    margin-bottom: 4px;
   }
+
+  .checkbox {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+  }
+
+  .checkbox:checked + .menu .burger_menu span {
+    position: absolute;
+    transition: all 0,3s ease-in-out;
+  }
+
+  .checkbox:checked + .menu .burger_menu span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .checkbox:checked + .menu .burger_menu span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .checkbox:checked + .menu .burger_menu span:nth-child(3) {    
+    transform: rotate(-45deg);
+  }
+
+  nav {
+    background-color:#ac76ff;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+
+  .checkbox:checked + .menu nav {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  ul {
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+    display: flex; 
+    flex-direction: column; 
+    height: 100%;
+    justify-content: center;
+    text-align: center;     
+  }
+
+      li {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
 
 /* Top section (Page 1 section 1) */
 .page1 {
     background-color: black;
     margin-top: -30px;
+
     }
 
   .heading_1 {
     text-transform: uppercase;
     color: #ac76ff;
+    font-size: 2rem;
+    font-weight: normal; 
     margin-bottom: 3px;
     margin-left: 50%;
-    position:static;
-    font-weight: normal; 
-    font-size: 2rem;
+    padding-top: 80px;
   }
   
   .heading_2 {
     text-transform: uppercase;
     color: #00ff39;
     font-size: 5rem;
+    font-weight: normal;
     margin-top: -25px;
     margin-bottom: -30px;
     text-align: center;
-    font-weight: normal;
-    position:sticky;
-    z-index: 2;
   }
   
   .heading_3 {
     text-transform: uppercase;
     color: #fff136;
+    font-size: 2rem;
+    font-weight: normal;
     margin-top: 0px;
     margin-right: 43%;
-    text-align: right;
-    position: relative;
-    font-weight: normal;
-    font-size: 2rem;
-    z-index: 1;
+    margin-left: 30%;
     
   }
   
@@ -137,37 +214,52 @@ header {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    padding-top: 20px;
     line-height: 0px;
     padding-left: 10px; 
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
     
   }
   
   .menu_heading {
     text-transform: uppercase;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 16px;
+    margin-bottom: 16px;
   }
 
   .menu_decription {
     font-family: 'Roboto Condensed';font-size: 22px;
     font-size: 1rem;
     align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    
+  }
+
+  .menu_price {
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .menu_icon {
+    transform: rotate(3deg);
+    display: inline-block;
   }
 
   .menu_icon_1 {
-    text-transform: uppercase;
-    font-family: 'Courier Prime';font-size: 22px;
-    font-size: 1rem;
     background-color: #ac76ff;
-    
+    text-transform: uppercase;
+    font-family: 'Courier Prime';
+    font-size: 1rem;
+    transform: rotate(-3deg);
+    display: inline-block;
+    padding-inline: 5px;
+    width: 50px;
   }
   
   .menu_icon_2 {
     text-transform: uppercase;
-    font-family: 'Courier Prime';font-size: 22px;
+    font-family: 'Courier Prime';
     font-size: 1rem;
     background-color: #00ff39;
   }
@@ -233,52 +325,57 @@ header {
   }
   
   /* Contact information */
-  
+  .book_a_table {
+    position: relative;
+  }
 
-  .book_table {
+  .background {
     background-image: url("../assets/photos/restaurant_table.jpg");
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     background-size: cover;
+    position: absolute;
+    -webkit-filter: blur(2px);
+    margin-top: 10px;
+  }
+
+  .box {
     color: #3da7d5;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: -2px -2px rgb(0, 0, 0);
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     justify-items: center; 
+    position: relative;
+    z-index: 1;
   }
-  
-  .bg-image {
-    
-  }
-
-
 
   span.material-symbols-outlined {
     font-size: 2em;
     margin-right: 20px;
   }
 
-  .icon_text {
+  .text {
     display: flex;
     align-items: center;
   }
 
+/* Footer */
   .book_table_footer {
     background-color: #ac76ff;
     color: white;
     display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-
+    margin-top: 20px; 
+    align-items: center;
+    justify-content: space-between; 
   }
   
+
   .cookies {
     font-family: 'Roboto Condensed';font-size: 22px;
     font-size: 1rem;
     margin-left: 10px;
-
   }
-  
+
   .decline_button {
     text-transform: uppercase;
     font-size: 1rem;;
@@ -286,7 +383,7 @@ header {
     border-style: none;
     font-family: 'Jockey One';
     border-radius: 10px;
-    width: 100px;
+    width: 120px;
     height: 30px;
   }
   
@@ -297,23 +394,7 @@ header {
     border-style: none;
     font-family: 'Jockey One';
     border-radius: 10px;
-    width: 100px;
+    width: 120px;
     height: 30px;
-  }
-  
-  /* Links for more information on the bottom */
-  footer {
-    background-color: #ac76ff;
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  footer a {
-        text-decoration: none;
-        color: white;
-        margin: 10px
+    margin-right: 10px;
   }

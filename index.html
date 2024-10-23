@@ -19,10 +19,25 @@
 
   <!-- The menu to the left -->
   <header>
-    <nav>
-      <div class="burger_menu">Burger</div>
-    </nav>
-    <h1 class="menu_headning">Tough Cookie</h1>
+    <h1 class="restaurant">Tough Cookie</h1>
+    
+    <input class="checkbox" type="checkbox" />
+
+    <div class="menu">
+      <button class="burger_menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    
+      <nav>
+        <ul>
+          <li>Hem</li>
+          <li>Om oss</li>
+          <li>Kontakta</li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- Top section (Page 1) -->
@@ -58,52 +73,54 @@
 
   <!-- Top section (Page 2 section 2) -->
     <article>
-      <p class="menu_icon_1">New!</p>
+      <section class="menu_icon_1">
+        <h3 class="menu_icon">New!</h3>
+      </section>
       <h3 class="menu_heading">Halloumi moklieh</h3>
       <p class="menu_decription">Deep-fried halloumi</p>
-      <h3>195 kr</h3>
+      <h3 class="menu_price">195 kr</h3>
     </article>
 
     <article>
       <h3 class="menu_heading">Mojaddara</h3>
       <p class="menu_decription">Green lentis with rice and fried onion</p>
-      <h3>135 kr</h3>
+      <h3 class="menu_price">135 kr</h3>
     </article>
 
     <article>
       <h3 class="menu_heading">Chiar & laban</h3>
       <p class="menu_decription">Lebanese spicy youghurt with chopped cucumber</p>
-      <h3>95 kr</h3>
+      <h3 class="menu_price">95 kr</h3>
     </article>   
 
     <article>
       <h3 class="menu_heading">Warak inab</h3>
       <p class="menu_decription">Rice- and veggie-filled dolma with mint and lemon</p>
-      <h3>85 kr</h3>
+      <h3 class="menu_price">85 kr</h3>
     </article>
 
     <article>
-      <p class="menu_icon_2">Vegan</p>
+      <h3 class="menu_icon_2">Vegan</h3>
       <h3 class="menu_heading">Moutabbal batinzian</h3>
       <p class="menu_decription">Smoked chopped aubergine, sesame paste, garlic and lemon</p>
-      <h3>175 kr</h3>
+      <h3 class="menu_price">175 kr</h3>
     </article>
 
     <article>
-      <p class="menu_icon_3">Popular</p>
+      <h3 class="menu_icon_3">Popular</h3>
       <h3 class="menu_heading">Ardishoki</h3>
       <p class="menu_decription">Artichoke with lemon and garlic marinade</p>
-      <h3>99 kr</h3>
+      <h3 class="menu_price">99 kr</h3>
     </article>
 
     <article>
       <h3 class="menu_heading">Mhamara</h3>
       <p class="menu_decription">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</p>
-      <h3>123 kr</h3>
+      <h3 class="menu_price">123 kr</h3>
     </article>
   </main>
 
-  <!-- Form for booking a table -->
+  <!-- Form for booking a table (Page 3 section 1) -->
   <form>
     <h2 class="book_your_table">Book your table</h2>
     <lable for="name">Name</lable>
@@ -128,25 +145,21 @@
     <button class="request_button">Request</button>
   </form>
 
-  <!-- Contact information -->
-  <section class="book_table">
-    <p class="icon_text"><span class="material-symbols-outlined">call</span>+46 8 123 45 67</p>
-    <p class="icon_text"><span class="material-symbols-outlined">alternate_email</span>book@toughcookie.com</p>
-    <p class="icon_text"><span class="material-symbols-outlined">location_on</span>Brända Tomten 111 31 Stockholm</p>
-  </section>
-    
-  <section class="book_table_footer">
+  <!-- Contact information (Page 3 section 2) -->
+  <div class="book_a_table">
+    <div class="background"></div>
+    <div class="box">
+      <p class="text"><span class="material-symbols-outlined">call</span>+46 8 123 45 67</p>
+      <p class="text"><span class="material-symbols-outlined">alternate_email</span>book@toughcookie.com</p>
+      <p class="text"><span class="material-symbols-outlined">location_on</span>Brända Tomten 111 31 Stockholm</p>
+    </div>
+  </div>
+
+  <!-- Footer -->     
+  <footer class="book_table_footer">
     <p class="cookies">You should accept cookies.</p>
     <button class="decline_button">Decline</button>
     <button class="accept_button">Accept</button>
-  </section>
-
-
-  <!-- Links for more information on the bottom -->
-  <footer>
-    <a href="#" target="_blank">Home</a>
-    <a href="#" target="_blank">Meny</a>
-    <a href="#" target="_blank">Book table</a>
   </footer>
 
 </body>
