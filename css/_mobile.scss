@@ -52,6 +52,7 @@ header {
     background-color:#fff136;
     border-radius: 6px;
     margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
   }
 
   .checkbox {
@@ -62,11 +63,25 @@ header {
     width: 35px;
     height: 35px;
     opacity: 0;
+    cursor: pointer;
   }
 
   .checkbox:checked + .menu .burger_menu span {
     position: absolute;
     transition: all 0,3s ease-in-out;
+    
+  }
+
+  .checkbox:hover + .menu .burger_menu span:nth-child(2) {
+    transform: translateX(-5px);
+  }
+
+  .checkbox:hover + .menu .burger_menu span:nth-child(1) {
+    transform: translateX(-5px);
+  }
+
+  .checkbox:hover + .menu .burger_menu span:nth-child(3) {    
+    transform: translateX(-5px);
   }
 
   .checkbox:checked + .menu .burger_menu span:nth-child(2) {
@@ -171,11 +186,12 @@ header {
 
   .section_1 {
     display:grid;
+  
   }
 
   .lettuce {
     max-width: 100%;
-    height: auto;  
+    height: auto; 
   }
 
   .white_arrow {
@@ -183,6 +199,11 @@ header {
     transform: rotate(90deg);
     margin-top: -60px;
     padding-left: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .lettuce:hover + .white_arrow {
+    transform: translateY(5px) rotate(90deg);
   }
   
   .text_bottom {
@@ -206,6 +227,8 @@ header {
     margin-bottom: 0px;
     padding-left: 10px;
     padding-right: 10px;
+    text-decoration: none;
+    color: black;
   }
 
   .black_arrow {
@@ -256,7 +279,7 @@ header {
   }
 
   .menu_decription {
-    font-family: 'Roboto Condensed';font-size: 22px;
+    font-family: 'Roboto Condensed';
     font-size: 1rem;
     align-items: center;
   }
