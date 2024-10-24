@@ -14,14 +14,21 @@ header {
     text-transform: uppercase;
     color: white;
     text-align: center;
-    width:90vw;
     position: fixed; 
+    z-index: 2;
+    margin-left: -10px;
+    margin-right: -10px;
+    
 }
 
   .restaurant {
     align-content: center;
     font-weight: normal; 
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 40px;
+    padding-right: 50px;
+    width: 400px;
   }
   
 
@@ -133,6 +140,8 @@ header {
     margin-top: -25px;
     margin-bottom: -30px;
     text-align: center;
+    position: relative;
+    z-index: 1;
   }
   
   .heading_3 {
@@ -141,9 +150,10 @@ header {
     font-size: 2rem;
     font-weight: normal;
     margin-top: 0px;
-    margin-right: 43%;
-    margin-left: 30%;
-    
+    margin-right: 40%;
+    margin-left: 31%;
+    position: relatvie;
+    z-index: 0;
   }
   
   .text_top {
@@ -151,28 +161,41 @@ header {
     font-size: 2rem;
     padding-left: 10px;
     padding-right: 10px;
-    font-weight: lighter;
   }
 
   
-  /* Top section (Page 1 section 2) */
+/* Top section (Page 1 section 2) */
   .bottom {
     background-color: white;
   }
 
-  .lettuce {
-    max-width: 100%;
-    height: auto;
+  .section_1 {
+    display:grid;
   }
 
+  .lettuce {
+    max-width: 100%;
+    height: auto;  
+  }
+
+  .white_arrow {
+    height: 40px;
+    transform: rotate(90deg);
+    margin-top: -60px;
+    padding-left: 10px;
+  }
+  
   .text_bottom {
     color: #ac76ff;
     font-size: 2rem;
     padding-left: 10px;
     padding-right: 10px;
-    font-weight: lighter;
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+
+  .section_2 {
+    display: flex; 
   }
   
   .explore_more {
@@ -184,13 +207,18 @@ header {
     padding-left: 10px;
     padding-right: 10px;
   }
+
+  .black_arrow {
+    width: 20px;
+    display: flex;
+    direction: row;
+  }
   
   .section_1 {
     background-color: white;
   }
   
-  /* Menu */
-  /* Page 2 (Section 1) */
+  /* Menu Page 2 (Section 1)*/
   .top_page2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -206,7 +234,7 @@ header {
    
   }
 
-  /* Page 2 (Section 2) */
+  /* Menu Page 2 (Section 2) */
   article {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -219,13 +247,11 @@ header {
     padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
-    
   }
   
   .menu_heading {
     text-transform: uppercase;
-    margin-top: 16px;
+    margin-top: 20px;
     margin-bottom: 16px;
   }
 
@@ -233,7 +259,6 @@ header {
     font-family: 'Roboto Condensed';font-size: 22px;
     font-size: 1rem;
     align-items: center;
-    
   }
 
   .menu_price {
@@ -244,6 +269,8 @@ header {
   .menu_icon {
     transform: rotate(3deg);
     display: inline-block;
+    padding-left: 10px;
+    margin-top: 10px;
   }
 
   .menu_icon_1 {
@@ -253,51 +280,74 @@ header {
     font-size: 1rem;
     transform: rotate(-3deg);
     display: inline-block;
-    padding-inline: 5px;
-    width: 50px;
+    width: 60px;
+    height: 20px;
   }
   
   .menu_icon_2 {
+    background-color: #00ff39;
     text-transform: uppercase;
     font-family: 'Courier Prime';
     font-size: 1rem;
-    background-color: #00ff39;
+    transform: rotate(-3deg);
+    display: inline-block;
+    width: 80px;
+    height: 20px;
   }
   
   .menu_icon_3 {
-    text-transform: uppercase;
-    font-family: 'Courier Prime';font-size: 22px;
-    font-size: 1rem;
     background-color: #fff136;
+    text-transform: uppercase;
+    font-family: 'Courier Prime';
+    font-size: 1rem;
+    transform: rotate(-3deg);
+    display: inline-block;
+    width: 100px;
+    height: 20px;
   }
   
-  /* Form for booking a table */
+  /* Book a table (Page 3 section 1)*/
   form {
     background-color: #00ff39;
     border-left: 10px solid white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
     padding-left: 10px; 
     margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
   }
 
   .book_your_table {
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal; 
   }
   
   lable {
     text-transform: uppercase;
     font-size: 1,5em;
+    display: inline-block; 
+    width: 120px;
+    font-size: 1.2em
   }
   
   input {
     border: none;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    height: 20px;
-    width: 200px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 23px;
+    width: 300px;
+    display: inline-block; 
+    
+  }
+
+  .cancle_request {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
   }
 
   .cancle_button {
@@ -305,9 +355,8 @@ header {
     font-size: 1,5em;
     background-color: #ac76ff;
     border-style: none;
-    font-family: 'Jockey One';
     border-radius: 10px;
-    width: 100px;
+    width: 150px;
     height: 30px;
   }
   
@@ -316,37 +365,44 @@ header {
     font-size: 1,5em;
     background-color: #fff136;
     border-style: none;
-    font-family: 'Jockey One';
     border-radius: 10px;
-    width: 100px;
+    width: 150px;
     height: 30px;
     display: row;
     justify-items: center;
   }
   
-  /* Contact information */
+/* Book a table (Page 3 section 2)*/
   .book_a_table {
+    border-left: 10px solid white;
+    background-color: #00ff39;
+    margin-left: -10px;
+    margin-right: -10px;
     position: relative;
+    padding-bottom: 80px;
   }
 
   .background {
     background-image: url("../assets/photos/restaurant_table.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
     width: 100%;
     height: 100%;
-    background-size: cover;
     position: absolute;
     -webkit-filter: blur(2px);
-    margin-top: 10px;
   }
 
   .box {
-    color: #3da7d5;
+    color: #28bcec;
+    font-size: 1em;
     text-shadow: -2px -2px rgb(0, 0, 0);
-    padding-top: 20px;
-    padding-bottom: 10px;
-    justify-items: center; 
+    padding-top: 80px;
+    padding-left: 70px;
     position: relative;
     z-index: 1;
+    width: 200px;
   }
 
   span.material-symbols-outlined {
@@ -364,24 +420,27 @@ header {
     background-color: #ac76ff;
     color: white;
     display: flex;
-    margin-top: 20px; 
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     align-items: center;
     justify-content: space-between; 
   }
   
 
   .cookies {
-    font-family: 'Roboto Condensed';font-size: 22px;
+    font-family: 'Roboto Condensed'; 
     font-size: 1rem;
-    margin-left: 10px;
+    margin-left: 20px;
+    width: 180px;
   }
 
   .decline_button {
     text-transform: uppercase;
-    font-size: 1rem;;
+    font-size: 1,5em;;
     background-color:#fff136;
     border-style: none;
-    font-family: 'Jockey One';
     border-radius: 10px;
     width: 120px;
     height: 30px;
@@ -389,12 +448,11 @@ header {
   
   .accept_button {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1,5em;
     background-color: #00ff39;
     border-style: none;
-    font-family: 'Jockey One';
     border-radius: 10px;
     width: 120px;
     height: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
   }
