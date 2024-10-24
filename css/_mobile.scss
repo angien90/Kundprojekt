@@ -1,7 +1,7 @@
 body {
   background-color:#ff0;
   font-family: 'Jockey One';
-  font-size: 22px;
+  font-size: 1rem;
   padding-left: 8px;
   padding-right: 8px;
   margin-left: 2px;
@@ -18,19 +18,19 @@ header {
     z-index: 2;
     margin-left: -10px;
     margin-right: -10px;
-    
 }
 
   .restaurant {
     align-content: center;
+    font-size: 3em;
     font-weight: normal; 
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 40px;
     padding-right: 50px;
-    width: 400px;
+    width: 430px;
   }
-  
+
 
 /*Burger meny */
   .burger_menu {
@@ -47,8 +47,8 @@ header {
 
   .line {
     display: block; 
-    width: 25px;
-    height: 3px;
+    width: 30px;
+    height: 5px;
     background-color:#fff136;
     border-radius: 6px;
     margin-bottom: 4px;
@@ -69,7 +69,6 @@ header {
   .checkbox:checked + .menu .burger_menu span {
     position: absolute;
     transition: all 0,3s ease-in-out;
-    
   }
 
   .checkbox:hover + .menu .burger_menu span:nth-child(2) {
@@ -114,7 +113,8 @@ header {
   }
 
   ul {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-weight: normal; 
     margin: 0;
     padding: 0;
     list-style: none; 
@@ -125,17 +125,17 @@ header {
     text-align: center;     
   }
 
-      li {
-      padding-top: 30px;
-      padding-bottom: 30px;
+    li {
+      padding-top: 20px;
+      padding-bottom: 20px;
     }
 
+    
 /* Top section (Page 1 section 1) */
 .page1 {
     background-color: black;
     margin-top: -30px;
-
-    }
+  }
 
   .heading_1 {
     text-transform: uppercase;
@@ -144,7 +144,7 @@ header {
     font-weight: normal; 
     margin-bottom: 3px;
     margin-left: 50%;
-    padding-top: 80px;
+    padding-top: 90px;
   }
   
   .heading_2 {
@@ -173,6 +173,7 @@ header {
   
   .text_top {
     color: #00ff39;
+    font-weight: normal;
     font-size: 2rem;
     padding-left: 10px;
     padding-right: 10px;
@@ -186,7 +187,6 @@ header {
 
   .section_1 {
     display:grid;
-  
   }
 
   .lettuce {
@@ -211,8 +211,8 @@ header {
     font-size: 2rem;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   .section_2 {
@@ -224,7 +224,7 @@ header {
     font-weight: normal;
     font-size: 2rem;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
     padding-left: 10px;
     padding-right: 10px;
     text-decoration: none;
@@ -241,7 +241,8 @@ header {
     background-color: white;
   }
   
-  /* Menu Page 2 (Section 1)*/
+
+/* Menu Page 2 (Section 1)*/
   .top_page2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -254,10 +255,10 @@ header {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
-   
   }
 
-  /* Menu Page 2 (Section 2) */
+
+/* Menu Page 2 (Section 2) */
   article {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -274,6 +275,8 @@ header {
   
   .menu_heading {
     text-transform: uppercase;
+    font-size: 1.5rem;
+    font-weight: normal;
     margin-top: 20px;
     margin-bottom: 16px;
   }
@@ -285,8 +288,10 @@ header {
   }
 
   .menu_price {
+    font-size: 1.5rem;
     margin-top: 16px;
     margin-bottom: 16px;
+    font-weight: normal;
   }
 
   .menu_icon {
@@ -350,10 +355,9 @@ header {
   
   lable {
     text-transform: uppercase;
-    font-size: 1,5em;
+    font-size: 1.5rem;
     display: inline-block; 
     width: 120px;
-    font-size: 1.2em
   }
   
   input {
@@ -363,7 +367,6 @@ header {
     height: 23px;
     width: 300px;
     display: inline-block; 
-    
   }
 
   .cancle_request {
@@ -371,11 +374,12 @@ header {
     justify-content: center;
     gap: 30px;
     margin-top: 10px;
+    font-size: 1.5rem;
   }
 
   .cancle_button {
     text-transform: uppercase;
-    font-size: 1,5em;
+    font-size: 1.5rem;
     background-color: #ac76ff;
     border-style: none;
     border-radius: 10px;
@@ -391,10 +395,9 @@ header {
     border-radius: 10px;
     width: 150px;
     height: 30px;
-    display: row;
-    justify-items: center;
   }
   
+
 /* Book a table (Page 3 section 2)*/
   .book_a_table {
     border-left: 10px solid white;
@@ -419,13 +422,13 @@ header {
 
   .box {
     color: #28bcec;
-    font-size: 1em;
+    font-size: 1.5rem;
     text-shadow: -2px -2px rgb(0, 0, 0);
     padding-top: 80px;
     padding-left: 70px;
     position: relative;
     z-index: 1;
-    width: 200px;
+    width: 220px;
   }
 
   span.material-symbols-outlined {
@@ -437,6 +440,7 @@ header {
     display: flex;
     align-items: center;
   }
+
 
 /* Footer */
   .book_table_footer {
@@ -450,7 +454,6 @@ header {
     align-items: center;
     justify-content: space-between; 
   }
-  
 
   .cookies {
     font-family: 'Roboto Condensed'; 
@@ -461,7 +464,7 @@ header {
 
   .decline_button {
     text-transform: uppercase;
-    font-size: 1,5em;;
+    font-size: 1.5rem;
     background-color:#fff136;
     border-style: none;
     border-radius: 10px;
@@ -471,7 +474,7 @@ header {
   
   .accept_button {
     text-transform: uppercase;
-    font-size: 1,5em;
+    font-size: 1.5rem;
     background-color: #00ff39;
     border-style: none;
     border-radius: 10px;
