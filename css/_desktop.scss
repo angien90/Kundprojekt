@@ -136,7 +136,15 @@ header {
 
 
       /* Menu Page 2 (Section 1) */
-      
+      .top_page2 {
+        display: grid;
+        gap: 16px;
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .top_page2:nth-child(1) {
+        border: 3px solid green;
+      }
 
 
       /* Menu Page 2 (Section 2) */
@@ -148,41 +156,47 @@ header {
       }
 
       .menu_heading {
-        grid-column: 2 / span 3;
+        grid-column: 2 / span 4;
         grid-row: 1;
-        font-size: 3rem;
+        font-size: 3.5rem;
+        align-content: center;
 
       }
 
       .menu_decription {
         grid-column: 6 / span 6;
+        grid-row: 1;
+        font-size: 2rem;
+        align-content: center;
       }
 
       .menu_price {
         grid-column: 12;
         font-size: 3rem;
+        align-content: center;
+        text-align: right;
       }
 
 
       .menu_icon_1 {
-        grid-column: 4;
-        grid-row: 1;
-        margin-top: 10px;
-        margin-left: 80px;
+        grid-column: 5;
+        grid-row: 1; 
+        margin-top: 20px;
+        margin-left: -40px;
       }
 
       .menu_icon_2 {
-        grid-column: 4;
+        grid-column: 5;
         grid-row: 1; 
-        margin-top: 10px;
-        text-align: right;
+        margin-top: 20px;
+        margin-left: 20px;
       }
 
       .menu_icon_3 {
-        grid-column: 3;
+        grid-column: 4;
         grid-row: 1;
-        margin-top: 10px;
-        text-align: right;
+        margin-top: 20px;
+        margin-left: -70px;
       }
       
-      
+/* Book a table (Page 3 section 1)*/
