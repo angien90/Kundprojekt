@@ -49,7 +49,7 @@ header {
     display: block; 
     width: 30px;
     height: 5px;
-    background-color:#fff136;
+    background-color:#ff0;
     border-radius: 6px;
     margin-bottom: 4px;
     transition: all 0.3s ease-in-out;
@@ -293,10 +293,10 @@ header {
     font-weight: normal;
   }
 
-  .menu_icon {
+  .menu_icon_1_1 {
     transform: rotate(3deg);
     display: inline-block;
-    padding-left: 10px;
+    padding-left: 20px;
     margin-top: 10px;
   }
 
@@ -305,10 +305,17 @@ header {
     text-transform: uppercase;
     font-family: 'Courier Prime';
     font-size: 1rem;
+    transform: rotate(3deg);
+    display: inline-block;
+    width: 80px;
+    height: 20px;   
+  }
+
+  .menu_icon_2_1 {
     transform: rotate(-3deg);
     display: inline-block;
-    width: 60px;
-    height: 20px;
+    padding-left: 10px;
+    margin-top: 10px;
   }
   
   .menu_icon_2 {
@@ -322,12 +329,19 @@ header {
     height: 20px;
   }
   
+  .menu_icon_3_1 {
+    transform: rotate(0deg);
+    display: inline-block;
+    padding-left: 10px;
+    margin-top: 10px;
+  }
+
   .menu_icon_3 {
     background-color: #fff136;
     text-transform: uppercase;
     font-family: 'Courier Prime';
     font-size: 1rem;
-    transform: rotate(-3deg);
+    transform: rotate(0deg);
     display: inline-block;
     width: 100px;
     height: 20px;
