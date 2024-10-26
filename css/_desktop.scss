@@ -110,7 +110,29 @@ header {
         margin-bottom: -1px;
       }
 
-      .section_1 {
-        
+      .section_2 {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);  
+        grid-template-rows: repeat(1, 1fr);
+        background-color: black;
+      }
+
+      .explore_more {
+         grid-column: 7 / span 6;
+         grid-row: 1;
+         background-color: white;
+         font-size: 4em;
+         border-left: 20px solid #fff136;
+         padding-left: 20px;
       }
     
+      .black_arrow {
+        grid-column: 10;
+        grid-row: 1;
+        width: 50px;
+        padding-top: 15px;
+        display: flex;
+        margin-left: -50px;
+        
+        
+      }
