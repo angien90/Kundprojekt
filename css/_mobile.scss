@@ -28,7 +28,7 @@ header {
     margin-bottom: 10px;
     margin-right: 40px;
     padding-right: 50px;
-    width: 430px;
+    min-width: 100vw;
   }
 
 
@@ -55,7 +55,7 @@ header {
     transition: all 0.3s ease-in-out;
   }
 
-  .checkbox {
+  .menu_checkbox {
     position: fixed;
     top: 20px;
     right: 20px;
@@ -66,32 +66,32 @@ header {
     cursor: pointer;
   }
 
-  .checkbox:checked + .menu .burger_menu span {
+  .menu_checkbox:checked + .menu .burger_menu span {
     position: absolute;
     transition: all 0,3s ease-in-out;
   }
 
-  .checkbox:hover + .menu .burger_menu span:nth-child(2) {
+  .menu_checkbox:hover + .menu .burger_menu span:nth-child(2) {
     transform: translateX(-5px);
   }
 
-  .checkbox:hover + .menu .burger_menu span:nth-child(1) {
+  .menu_checkbox:hover + .menu .burger_menu span:nth-child(1) {
     transform: translateX(-5px);
   }
 
-  .checkbox:hover + .menu .burger_menu span:nth-child(3) {    
+  .menu_checkbox:hover + .menu .burger_menu span:nth-child(3) {    
     transform: translateX(-5px);
   }
 
-  .checkbox:checked + .menu .burger_menu span:nth-child(2) {
+  .menu_checkbox:checked + .menu .burger_menu span:nth-child(2) {
     opacity: 0;
   }
 
-  .checkbox:checked + .menu .burger_menu span:nth-child(1) {
+  .menu_checkbox:checked + .menu .burger_menu span:nth-child(1) {
     transform: rotate(45deg);
   }
 
-  .checkbox:checked + .menu .burger_menu span:nth-child(3) {    
+  .menu_checkbox:checked + .menu .burger_menu span:nth-child(3) {    
     transform: rotate(-45deg);
   }
 
@@ -107,7 +107,7 @@ header {
     transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
-  .checkbox:checked + .menu nav {
+  .menu_checkbox:checked + .menu nav {
     visibility: visible;
     opacity: 1;
   }
@@ -165,7 +165,6 @@ header {
     font-size: 2rem;
     font-weight: normal;
     margin-top: 0px;
-    margin-right: 40%;
     margin-left: 31%;
     position: relatvie;
     z-index: 0;
@@ -183,22 +182,24 @@ header {
 /* Top section (Page 1 section 2) */
   .bottom {
     background-color: white;
-  }
-
-  .section_1 {
-    display:grid;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .lettuce {
-    max-width: 100%;
+    width: 100%;
     height: auto; 
+    margin: 0;
   }
 
   .white_arrow {
     height: 40px;
+    position: relative;
     transform: rotate(90deg);
-    margin-top: -60px;
-    padding-left: 10px;
+    margin-top: -100px;
+    margin-bottom: 50px;
+    padding-left: 30px;
     transition: transform 0.3s ease-in-out;
   }
 
@@ -211,14 +212,10 @@ header {
     font-size: 2rem;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 0px;
+    margin-bottom: 10px;
   }
 
-  .section_2 {
-    display: flex; 
-  }
-  
   .explore_more {
     text-transform: uppercase;
     font-weight: normal;
@@ -233,11 +230,6 @@ header {
 
   .black_arrow {
     width: 20px;
-    display: flex;
-  }
-  
-  .section_1 {
-    background-color: white;
   }
   
 
@@ -366,7 +358,7 @@ header {
     font-weight: normal; 
   }
   
-  lable {
+  label {
     text-transform: uppercase;
     font-size: 1.5rem;
     display: inline-block; 
@@ -413,17 +405,16 @@ header {
 
 /* Book a table (Page 3 section 2)*/
   .book_a_table {
-    border-left: 10px solid white;
     background-color: #00ff39;
     margin-left: -10px;
     margin-right: -10px;
     position: relative;
     padding-bottom: 80px;
+    width: 100%;
   }
 
   .background {
     background-image: url("../assets/photos/restaurant_table.jpg");
-    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 400px;
@@ -431,22 +422,26 @@ header {
     height: 100%;
     position: absolute;
     -webkit-filter: blur(2px);
+    
   }
 
   .box {
     color: #28bcec;
     font-size: 1.5rem;
+    font-weight: normal;
     text-shadow: -2px -2px rgb(0, 0, 0);
     padding-top: 80px;
-    padding-left: 70px;
+    top: 20%;
+    left: 20%;
     position: relative;
     z-index: 1;
-    width: 220px;
+    width: 230px;
+    
   }
 
   span.material-symbols-outlined {
     font-size: 2em;
-    margin-right: 20px;
+    margin-right: 40px;
   }
 
   .text {

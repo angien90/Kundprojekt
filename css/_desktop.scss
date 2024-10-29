@@ -1,3 +1,5 @@
+
+
 /*The menu to the left*/
 header {
     display: grid;
@@ -6,25 +8,36 @@ header {
     top: 0;
     left: 0;
     width: 160px;
-    height: 100vh;
-    border-right: 20px solid #ff0;
+    min-height: 100vh;
+    border-right: 16px solid #ff0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .restaurant {
-    transform: rotate(-90deg);
-    position: absolute;
-    top: 70%;
-    left: 35px;
-    transform-origin: left top;
-    font-size: 4rem;
+    font-size: 3.5rem;
+    padding-bottom: 40px;
+    margin-top: 40px;
+    text-orientation: upright;
+    writing-mode: vertical-lr;
+    letter-spacing: -20px;
+    word-spacing: -20px;
+    width: 50px;
+    margin-right: -40px;
+    padding-right: -50px;
   }
 
   .burger_menu {
     left: 35px;
   }
 
-  .checkbox {
-    left: 35px;
+  .menu_checkbox {
+    width: 70px;
+    height: 70px;
+    left: 50px;
+    top: 5px;
   }
 
   .line {
@@ -33,7 +46,11 @@ header {
     margin-bottom: 10px;
   }
 
+  ul {
+    font-size: 4rem;
+  }
 
+  
 /* Top section (Page 1 section 1) */   
 .top_page1 {
     display: grid;
@@ -46,9 +63,9 @@ header {
         grid-column: 4 / span 2;
         grid-row: 1;
         text-align: right;
-        font-size: 3.8em;
+        font-size: 3.8rem;
         margin-left: 0%;
-        margin-right: 35px;  
+        margin-right: 20px;  
         margin-top: 140px;
     }
 
@@ -57,7 +74,8 @@ header {
         grid-row: 1;
         text-align: right;
         font-size: 10rem;
-        margin-right: 30px;
+        margin-left: -20%;
+        margin-right: 20px;
         margin-top: 250px;
     }
 
@@ -65,9 +83,10 @@ header {
         grid-column: 3 / span 2;
         grid-row: 1;
         text-align: right;
-        font-size: 3.8em;
+        font-size: 3.9rem;
+        margin-left: 25%;
+        margin-right: 70px;
         margin-top: 370px;
-        margin-left: 70px;
     }
 
     .text_top {
@@ -81,8 +100,7 @@ header {
     }
 
 /* Top section (Page 1 section 2) */ 
-    .section_1, 
-    .section_2 {
+    .bottom {
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(12, 1fr);
@@ -91,11 +109,12 @@ header {
     .lettuce {
         grid-column: 2 / span 5;
         grid-row: 1;
-        width: auto;
-        height: 700px;
-        margin-left: -10px;
+        object-fit: cover;
+        height: 100%;
         border-right: 20px solid #ff0;
-        margin-bottom: -50px;
+        margin-right: -20%;
+        
+        
     }
 
     .white_arrow{
@@ -110,26 +129,22 @@ header {
         grid-row: 1;
         font-size: 4em;
         padding-left: 30px;
+        padding-right: 30px;
         margin-top: 20px;
+        
     }
 
-        .explore_more {
+    .explore_more {
         grid-column: 7 / span 6;
-        grid-row: 2;
-        background-color: white;
+        grid-row: 1;
         font-size: 4em;
-        padding-left: 30px;
-        margin-top: -80px;
-        padding-bottom: 10px;
+        align-content: end;
+        margin-left: 20px;
+        
     }
 
-      .black_arrow {
-        grid-column: 10;
-        grid-row: 1;
+      .black_arrow { 
         width: 50px;
-        margin-top: -50px;
-        display: flex;
-        margin-left: -80px;
       }
 
 
@@ -145,12 +160,16 @@ header {
         object-fit: cover;
         width: 100vw;
         height: 100%;
+        margin-left: -10px;
       }
 
       div:nth-child(1) {
-        grid-column: 2 / span 3;
+        grid-column: 2 / span 3;     
       }
 
+      div:nth-child(3) {
+        margin-right: -10px;
+      }
 
     /* Menu Page 2 (Section 2) */
     article {
@@ -205,64 +224,109 @@ header {
     form { 
         display: grid;
         gap: 16px;
-        grid-template-columns: repeat(12, 1fr);
+        grid-template-columns: repeat(12, 1fr);   
+        border-left: 16px solid white;  
+        height: auto; 
+        align-items: center;
+        
+        
+    }
+
+    .form_book_your_table {
+       grid-column: 2 / 5 span;     
     }
 
     .book_your_table {
-        grid-column: 2 / span 5;
+        grid-column: 2 / 5 span;
+        grid-row: 1;
         font-size: 5rem;
-        margin-left: 30px;
+        margin-top: 20%;
+        margin-left: 30px;  
     }
 
-    lable {
+    label {
         grid-column: 2 / span 2;
         font-size: 3em;
-        padding-left: 30px;
-        padding-bottom: 30px;
-        width: auto;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 30px;
     }
 
     input {
         grid-column: 4 / span 3;
-        width: 400px;
-        height: 40px;
-        border-radius: 15px;
-        margin-top: 10px;
-        margin-left: -50px;   
+        width: 450px;
+        height: 50px;
+        border-radius: 20px;
+        margin-left: 30px;
     }
 
     .cancle_request {
         grid-column: 2 / span 5;
-        padding-left: 30px;
-        justify-content: right;
+        align-items: center;
         margin-right: 100px;
-        gap: 30px;  
+        gap: 30px;
+        margin-bottom: 100px;  
+        margin-right: 0px;
+        padding-right: 45px;
+        
     }
 
     .cancle_button {
-        width: 400px;
+        grid-column: 2 / span 2;
+        width: 350px;
         height: 50px;
         font-size: 3rem;
-        border-radius: 20px;     
+        border-radius: 20px;   
+        padding-bottom: 60px;
     }
 
     .request_button {
-        width: 400px;
+        grid-column: 4 / span 2;
+        min-width: 350px;
         height: 50px;
         font-size: 3rem;
-        border-radius: 20px;
+        border-radius: 20px;  
+        padding-bottom: 60px;
     }
 
-    
-    /* Book a table (Page 3 section 2)*/
-  .book_a_table {
 
-    /* Footer */
+    .book_a_table {
+        grid-column: 7 / span 5;
+        grid-row: 1 / span 2;
+        padding-left: 80px;
+        width: auto;
+        height: 750px;
+        align-items: center;
+    }
+
+    .background {
+        grid-column: 7 / span 5;
+        background-size: cover;
+        padding-right: -50px;
+    }
+
+    .box {
+        grid-column: 7 / span 5;
+        font-size: 4rem;
+        text-shadow: -5px -5px rgb(0, 0, 0);
+        width: 550px;
+        top: 10%;
+        left: 10%;
+        
+     }
+
+
+/* Footer */
     .book_table_footer {
         display: grid;
-        gap: 16px;
         grid-template-columns: repeat(12, 1fr);
+        gap: 16px;
         height: 100px;
+        width: 100%;
+        position: relative; 
+        z-index: 2;
+        margin-right: 16px;
+        padding-right: 20px;
     }
 
     .cookies {
@@ -281,6 +345,7 @@ header {
         height: 55px;
         margin-left: 50px;
         border-radius: 15px;
+        align-items: right;
     }
 
     .accept_button {
