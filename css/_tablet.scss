@@ -45,18 +45,17 @@
 
  /* Book a table (Page 3 section 1)*/
   input {
-    width: 70%;
+    width: 80%;
   }
 
 /* Book a table (Page 3 section 2)*/
-  .book_a_table {
-    
-  }
-
-  .background {
-    background-size: 50%;
+   .background {
+    top: 0px;
+    bottom: 0px;
   }
 
   .box {
-    font-size: 4em;
+    top: 0px;
+    bottom: 0px;
+    font-size: 2rem;
   }
