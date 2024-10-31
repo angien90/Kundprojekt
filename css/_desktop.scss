@@ -65,7 +65,7 @@ header {
         margin-left: 0%;
         margin-right: 20px;  
         margin-top: 140px;
-        align-items: right;
+        align-items:end;
     }
 
     .heading_2 {
@@ -73,9 +73,9 @@ header {
         grid-row: 1;
         font-size: 10rem;
         margin-left: 0%;
-        margin-right: -120px;
+        margin-right: -160px;
         margin-top: 250px;
-        align-items: right;
+        align-items: end;
     }
 
     .heading_3 {
@@ -83,9 +83,9 @@ header {
         grid-row: 1;
         font-size: 4rem;
         margin-left: 0%;
-        margin-right: -20px;
+        margin-right: -60px;
         margin-top: 370px;
-        align-items: right;
+        align-items: end;
     }
 
     .text_top {
@@ -337,8 +337,7 @@ header {
         z-index: 2;
         margin-right: 16px;
         padding-right: 20px;
-        display: flex;
-        display: row;  
+        
     }
 
     .cookies {
@@ -352,7 +351,8 @@ header {
 
     .decline_accept_button {
       grid-column: 8 / span 5;
-      align-items: center;
+      gap: 30px;
+      padding-top: 20px;
     }
 
     .decline_button {
@@ -362,7 +362,6 @@ header {
         height: 55px;
         margin-left: 50px;
         border-radius: 15px;
-        align-items: right;
     }
 
     .accept_button {
