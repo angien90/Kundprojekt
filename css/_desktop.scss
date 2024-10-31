@@ -7,7 +7,7 @@ header {
   top: 0;
   height: 100%;
   width: 120px;
-  display: flex; /* För att centrera innehållet vertikalt */
+  display: flex; 
   justify-content: center;
   align-items: center;
   border-right: 10px solid #ff0;
@@ -101,8 +101,9 @@ header {
 /* Top section (Page 1 section 2) */ 
     .bottom {
         display: grid;
-        gap: 16px;
         grid-template-columns: repeat(12, 1fr);
+        
+        
     }
 
     .lettuce {
@@ -116,29 +117,28 @@ header {
 
     .white_arrow {
         grid-column: 2;
-        grid-row: 1;
-        margin-top: 600px;
+        grid-row: 2;
         height: 70px;
     }
 
     .lettuce_text {
       grid-column: 7 / span 6;
+      height: auto;
+      margin-left: 20px;
     }
 
     .text_bottom {
         font-size: 4em;
-        padding-left: 30px;
+        padding-left: 20px;
         padding-right: 50px;
         margin-top: 20px;
-        
     }
 
     .explore_more {
         grid-row: 1;
         font-size: 4em;
         align-content: end;
-        margin-left: 20px;
-        
+        margin-left: 10px;
     }
 
       .black_arrow { 
@@ -151,7 +151,8 @@ header {
         display: grid;
         gap: 16px;
         grid-template-columns: repeat(12, 1fr);
-        margin-top: 20px;
+        margin-left: -40px;
+        
       }
 
       .food_1 {
@@ -159,6 +160,7 @@ header {
         width: 100%;
         height: 100%;
         object-fit: cover;
+        
       }
 
       .food_2 {
@@ -188,6 +190,7 @@ header {
         grid-row: 1;
         font-size: 3.5rem;
         align-content: center;
+        
       }
 
       .menu_decription {
@@ -202,27 +205,27 @@ header {
         font-size: 3.5rem;
         align-content: center;
         text-align: right;
+        padding-right: 10px;
       }
 
       .menu_icon_1 {
         grid-column: 5;
         grid-row: 1; 
-        margin-top: 20px;
-        margin-left: -40px;
+        margin-top: 20%;
       }
 
       .menu_icon_2 {
         grid-column: 5;
         grid-row: 1; 
-        margin-top: 20px;
-        margin-left: 20px;
+        margin-top: 20%;
+        margin-left: 30%
       }
 
       .menu_icon_3 {
         grid-column: 4;
         grid-row: 1;
-        margin-top: 20px;
-        margin-left: -70px;
+        margin-top: 20%;
+        margin-left: -40%;
       }
       
 /* Book a table (Page 3 section 1)*/
@@ -231,7 +234,7 @@ header {
         gap: 16px;
         grid-template-columns: repeat(12, 1fr);   
         border-left: 16px solid white;  
-        height: auto; 
+         
         align-items: center;
         
         
@@ -247,6 +250,7 @@ header {
         font-size: 5rem;
         margin-top: 20%;
         margin-left: 30px;  
+        width: 100%;
     }
 
     label {
@@ -288,37 +292,38 @@ header {
 
     .request_button {
         grid-column: 4 / span 2;
-        min-width: 350px;
+        width: 350px;
         height: 50px;
         font-size: 3rem;
         border-radius: 20px;  
         padding-bottom: 60px;
     }
 
-
+/* Book a table (Page 3 section 2)*/
     .book_a_table {
         grid-column: 7 / span 5;
         grid-row: 1 / span 2;
-        padding-left: 80px;
-        width: auto;
-        height: 750px;
-        align-items: center;
+        height: 100%;
     }
 
     .background {
         grid-column: 7 / span 5;
         background-size: cover;
-        padding-right: -50px;
+        top: 30%;
+        left: 10%;
+        width: 100%;
+        height: 50%;
     }
 
     .box {
         grid-column: 7 / span 5;
-        font-size: 3.5rem;
+        font-size: 2.5rem;
         text-shadow: -5px -5px rgb(0, 0, 0);
-        width: 550px;
-        top: 10%;
-        left: 10%;
-        
+        width: 100%;
+        height: 50%;
+        top: 30%;
+        left: 15%;
+        padding-left: 0%; 
      }
 
 
@@ -334,23 +339,21 @@ header {
         margin-right: 16px;
         padding-right: 20px;
         display: flex;
-        display: row;
-        
+        display: row;  
     }
 
     .cookies {
         grid-column: 2 / span 3;
         grid-row: 1;
         font-size: 2rem;
-        padding-left: 20px;
+        margin-left: 10%;
+        text-align: left;
         width: 100%;
     }
 
     .decline_accept_button {
       grid-column: 8 / span 5;
       align-items: center;
-     
-      
     }
 
     .decline_button {

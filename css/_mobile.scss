@@ -134,6 +134,7 @@ header {
 
     
 /* Top section (Page 1 section 1) */
+
 .page1 {
     background-color: black;
     margin-top: -30px;
@@ -190,12 +191,15 @@ header {
   .bottom {
     padding: 0;
     margin: 0;
+    
   }
 
   .lettuce {
-    max-width: 100%;
+    width: 100%;
     max-height: auto; 
     margin: 0;
+    left: 0;
+    object-fit: cover;
   }
 
   .white_arrow {
@@ -203,9 +207,10 @@ header {
     position: relative;
     transform: rotate(90deg);
     margin-top: -100px;
-    margin-bottom: 50px;
-    padding-left: 30px;
+    margin-bottom: 40px;
+    padding-left: 20px;
     transition: transform 0.3s ease-in-out;
+    align-items: start;
   }
 
   .lettuce:hover + .white_arrow {

@@ -39,7 +39,8 @@
   </header>
 
   <!-- Top section (Page 1) -->
-  <main class="page1">
+  <main>
+  <section class="page1">
 
      <!-- Top section (Page 1 section 2) -->
     <section class="top_page1">
@@ -53,17 +54,17 @@
     <section class="bottom">
         <img class="lettuce" src="assets/photos/crispy_iceberg_lettuce.jpg" alt="Crispy iceberg lettuce">
         <img class="white_arrow" src="assets/icons/arrow_downward_white_000000.svg" alt="White arrow pointing down">
-        
-        <div class="lettuce_text">
-          <p class="text_bottom">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries roasted butternut squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette heat mint potato chocolate cookie seeds samosa walnut mushroom tart.</p>
-          <a class="explore_more" href="#menu">Explore menu <img class="black_arrow" src="assets/icons/arrow_forward_black_FFFFFF.svg" alt="Black arrow pointing right" /></a>
-        </div>
-      </section>
+     
+      <div class="lettuce_text">
+        <p class="text_bottom">Crispy iceberg lettuce Caribbean red habanero blueberry chia seed jam overflowing berries roasted butternut squash basmati thyme hummus falafel bowl cozy butternut cilantro lime vinaigrette heat mint potato chocolate cookie seeds samosa walnut mushroom tart.</p>
+        <a class="explore_more" href="#menu">Explore menu <img class="black_arrow" src="assets/icons/arrow_forward_black_FFFFFF.svg" alt="Black arrow pointing right" /></a>
+      </div>
+    </section>
        
-  </main>
+  </section>
 
   <!-- Menu Page 2 (Section 1) -->
-  <main id="menu">
+  <section id="menu">
     <section class="top_page2" >
       <img class="food_1" src="assets/photos/spicy_bell_pepper_with_bread_and_chickpeas.jpg" alt="Chickpeas, olive, pepper and bread in a bowl">
       <img class="food_2" src="assets/photos/hummus_with_bread.jpg" alt="Hummus in a bowl with bread" >
@@ -121,34 +122,34 @@
       <p class="menu_decription">Spicy bell pepper relish with crushed walnuts and pomegranate syrup</p>
       <h3 class="menu_price">123 kr</h3>
     </article>
-  </main>
+  </section>
 
   <!-- Book a table (Page 3) -->
   <form>
     <section class="form_book_your_table">
     <h2 class="book_your_table">Book your table</h2>
     <label for="name">Name</label>
-    <input type="text" id="name" name="name" size="10" /><br>
+    <input type="text" id="name" name="name"/><br>
     
     <label for="email">Email</label>
-    <input type="email" id="email" name="email" size="10" /><br>
+    <input type="email" id="email" name="email"/><br>
 
     <label for="phone">Phone</label>
-    <input type="tel" id="phone" name="phone" size="10" /><br>
+    <input type="tel" id="phone" name="phone"/><br>
 
     <label for="date">Date</label>
-    <input type="datetime" id="date" name="date" size="10" /><br>
+    <input type="datetime-local" id="date" name="date"/><br>
 
     <label for="party-size">Party size</label>
-    <input type="number" id="party-size" name="party-size" size="10" /><br>
+    <input type="number" id="party-size" name="party-size"/><br>
 
     <label for="allergies">Allergies</label>
-    <input type="text" id="allergies" name="allergies" size="10" /><br>
+    <input type="text" id="allergies" name="allergies"/><br>
     </section>
 
     <section class="cancle_request">
-      <button class="cancle_button" type="button" titel="Button for cancel request">Cancel</button>
-      <button class="request_button" type="button" titel="Request button">Request</button>
+      <button class="cancle_button" type="button">Cancel</button>
+      <button class="request_button" type="button">Request</button>
     </section>
 
     <section class="book_a_table">
@@ -160,9 +161,7 @@
       </div>
     </section>
   </form>
-
-  <!-- Book a table (Page 3 section 2) -->
-  
+</main>
 
   <!-- Footer -->     
   <footer class="book_table_footer">
