@@ -6,7 +6,8 @@ body {
   padding-right: 8px;
   margin-left: 2px;
   margin-right: 2px;
-  }
+}
+  
 
 /* Restaurant name */
 header {
@@ -31,11 +32,12 @@ header {
     position: fixed;
     margin-top: 10px;
     margin-bottom: 10px;
+    width: 80vw;
   }
 
 
 /*Burger meny */
-  .burger_menu {
+  .burger-menu {
     width: 35px;
     height: 35px;
     background: transparent;
@@ -45,6 +47,17 @@ header {
     top: 20px;
     z-index: 2;
     pointer-events: none;
+  }
+
+  .menu-checkbox {
+    position: fixed;
+    top: 20px;
+    right: 5%;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    opacity: 0;
+    cursor: pointer;
   }
 
   .line {
@@ -57,43 +70,32 @@ header {
     transition: all 0.3s ease-in-out;
   }
 
-  .menu_checkbox {
-    position: fixed;
-    top: 20px;
-    right: 5%;
-    z-index: 1;
-    width: 35px;
-    height: 35px;
-    opacity: 0;
-    cursor: pointer;
-  }
-
-  .menu_checkbox:checked + .menu .burger_menu span {
+  .menu-checkbox:checked + .menu .burger-menu span {
     position: absolute;
     transition: all 0,3s ease-in-out;
   }
 
-  .menu_checkbox:hover + .menu .burger_menu span:nth-child(2) {
+  .menu-checkbox:hover + .menu .burger-menu span:nth-child(2) {
     transform: translateX(-5px);
   }
 
-  .menu_checkbox:hover + .menu .burger_menu span:nth-child(1) {
+  .menu-checkbox:hover + .menu .burger-menu span:nth-child(1) {
     transform: translateX(-5px);
   }
 
-  .menu_checkbox:hover + .menu .burger_menu span:nth-child(3) {    
+  .menu-checkbox:hover + .menu .burger-menu span:nth-child(3) {    
     transform: translateX(-5px);
   }
 
-  .menu_checkbox:checked + .menu .burger_menu span:nth-child(2) {
+  .menu-checkbox:checked + .menu .burger-menu span:nth-child(2) {
     opacity: 0;
   }
 
-  .menu_checkbox:checked + .menu .burger_menu span:nth-child(1) {
+  .menu-checkbox:checked + .menu .burger-menu span:nth-child(1) {
     transform: rotate(45deg);
   }
 
-  .menu_checkbox:checked + .menu .burger_menu span:nth-child(3) {    
+  .menu-checkbox:checked + .menu .burger-menu span:nth-child(3) {    
     transform: rotate(-45deg);
   }
 
@@ -109,7 +111,7 @@ header {
     transition: opacity 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
 
-  .menu_checkbox:checked + .menu nav {
+  .menu-checkbox:checked + .menu nav {
     visibility: visible;
     opacity: 1;
   }
@@ -134,28 +136,27 @@ header {
 
     
 /* Top section (Page 1 section 1) */
+.top-page1 {
+  position: relative;
+  background-color: black;
+  margin-top: -30px;
+}
 
-.page1 {
-    
-  }
-
-  .top_page1 {
-    position: relative;
-    background-color: black;
-    margin-top: -30px;
-  }
-
-  .heading_1 {
+  .heading-1 {
     text-transform: uppercase;
     color: #ac76ff;
     font-size: 2rem;
     font-weight: normal; 
-    margin-bottom: 3px;
-    margin-left: 50%;
     padding-top: 90px;
+    margin-bottom: 3px;
+    margin-right: 0px;
+    margin-left: 100px;
+    text-align: center;
+    position: relative;
+    z-index: 0;
   }
   
-  .heading_2 {
+  .heading-2 {
     text-transform: uppercase;
     color: #00ff39;
     font-size: 5rem;
@@ -167,34 +168,34 @@ header {
     z-index: 1;
   }
   
-  .heading_3 {
+  .heading-3 {
     text-transform: uppercase;
     color: #fff136;
     font-size: 2rem;
     font-weight: normal;
     margin-top: 0px;
     margin-right: 45px;
+    text-align: center;
     position: relative;
     z-index: 0;
-    text-align: center;
   }
   
-  .text_top {
+  .text-top {
     color: #00ff39;
     font-weight: normal;
     font-size: 2rem;
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 20px;
     margin-bottom: 0px;
-    padding-bottom: 10px;
   }
 
   
 /* Top section (Page 1 section 2) */
-  .bottom {
-    padding: 0;
-    margin: 0;
-  }
+.bottom {
+  padding: 0;
+  margin: 0;
+}
 
   .lettuce {
     width: 100%;
@@ -202,10 +203,10 @@ header {
     margin: 0;
     left: 0;
     object-fit: cover;
-    
+    margin-bottom: -10px;
   }
 
-  .white_arrow {
+  .white-arrow {
     height: 40px;
     position: relative;
     transform: rotate(90deg);
@@ -216,26 +217,26 @@ header {
     align-items: start;
   }
 
-  .lettuce:hover + .white_arrow {
+  .lettuce:hover + .white-arrow {
     transform: translateY(5px) rotate(90deg);
   }
 
-  .lettuce_text{
+  .lettuce-text{
     background-color: white;
     padding-top: 10px;
     margin-top: -20px;
   }
   
-  .text_bottom {
+  .text-bottom {
     color: #ac76ff;
     font-size: 2rem;
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 10px;
   }
 
-  .explore_more {
+  .explore-more {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 2rem;
@@ -247,35 +248,35 @@ header {
     color: black;
   }
 
-  .black_arrow {
+  .black-arrow {
     width: 20px;
   }
   
 
 /* Menu Page 2 (Section 1)*/
-  .top_page2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
+.top-page2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
-  .food_1 {
+  .food-1 {
     grid-column: 1;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .food_2 {
+  .food-2 {
     grid-column: 2;
     max-width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .food_3 {
+  .food-3 {
     grid-column: 3;
     max-width: 100%;
     height: 100%;
@@ -284,54 +285,49 @@ header {
 
 
 /* Menu Page 2 (Section 2) */
-  article {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
-    padding-left: 10px; 
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
+article {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-left: 10px; 
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
   
-  .menu_heading {
+  .menu-heading {
     text-transform: uppercase;
     font-size: 1.5rem;
     font-weight: normal;
-    margin-top: 20px;
-    margin-bottom: 16px;
     margin-bottom: 0px;
     margin-top: 5px;
   }
 
-  .menu_decription {
+  .menu-decription {
     font-family: 'Roboto Condensed';
     font-size: 1rem;
-    align-items: center;
     margin-bottom: 0px;
     margin-top: 5px;
   }
 
-  .menu_price {
+  .menu-price {
     font-size: 1.5rem;
-    margin-top: 16px;
-    margin-bottom: 16px;
     font-weight: normal;
     margin-bottom: 0px;
     margin-top: 5px;
   }
 
-  .menu_icon_1_1 {
+  .menu-icon-1-1 {
     transform: rotate(-3deg);
     display: inline-block;
     padding-left: 20px;
     margin-top: -10px;
   }
 
-  .menu_icon_1 {
+  .menu-icon-1 {
     background-color: #ac76ff;
     text-transform: uppercase;
     font-family: 'Courier Prime';
@@ -342,14 +338,14 @@ header {
     height: 20px;   
   }
 
-  .menu_icon_2_1 {
+  .menu-icon-2-1 {
     transform: rotate(3deg);
     display: inline-block;
     padding-left: 10px;
     margin-top: -10px;
   }
   
-  .menu_icon_2 {
+  .menu-icon-2 {
     background-color: #00ff39;
     text-transform: uppercase;
     font-family: 'Courier Prime';
@@ -360,15 +356,15 @@ header {
     height: 20px;
   }
   
-  .menu_icon_3_1 {
+  .menu-icon-3-1 {
     transform: rotate(0deg);
     display: inline-block;
     padding-left: 10px;
-    margin-top: 10px;
     margin-top: -10px;
+    
   }
 
-  .menu_icon_3 {
+  .menu-icon-3 {
     background-color: #fff136;
     text-transform: uppercase;
     font-family: 'Courier Prime';
@@ -380,17 +376,17 @@ header {
   }
   
   /* Book a table (Page 3 section 1)*/
-  form {
-    background-color: #00ff39;
-    border-left: 10px solid white;
-    padding-top: 40px;
-    padding-left: 20px; 
-    margin-top: 10px;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
+form {
+  background-color: #00ff39;
+  border-left: 10px solid white;
+  padding-top: 40px;
+  padding-left: 20px; 
+  margin-top: 10px;
+  margin-left: -10px;
+  margin-right: -10px;
+}
 
-  .book_your_table {
+  .book-your-table {
     text-transform: uppercase;
     font-size: 2.5rem;
     margin-top: 10px;
@@ -414,7 +410,7 @@ header {
     display: inline-block;
   }
 
-  .cancle_request {
+  .cancle-request {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -422,32 +418,32 @@ header {
     font-size: 1.5rem;
   }
 
-  .cancle_button {
+  .cancle-button {
     text-transform: uppercase;
     background-color: #ac76ff;
     border-style: none;
     border-radius: 10px;
     width: 150px;
-    height: 30px;
+    height: 35px;
   }
   
-  .request_button {
+  .request-button {
     text-transform: uppercase;
     background-color: #fff136;
     border-style: none;
     border-radius: 10px;
     width: 150px;
-    height: 30px;
+    height: 35px;
   }
   
 
 /* Book a table (Page 3 section 2)*/
-  .book_a_table {
-    background-color: #00ff39;
-    position: relative;
-    width: 100%;
-    height: 80vw;
-  }
+.book-a-table {
+  background-color: #00ff39;
+  position: relative;
+  width: 100%;
+  height: 80vw;
+}
 
   .background {
     background-image: url("../assets/photos/restaurant_table.jpg");
@@ -459,7 +455,6 @@ header {
     position: absolute;
     margin-left: -10px;
     -webkit-filter: blur(2px);
-    
   }
 
   .box {
@@ -468,12 +463,11 @@ header {
     font-weight: normal;
     text-shadow: -2px -2px rgb(0, 0, 0);
     align-content: center;
-    padding-left: 20%;
+    padding-left: 15%;
     position: absolute;
     z-index: 1;
     width: 80%;
     height: 100%;
-    
   }
 
   span.material-symbols-outlined {
@@ -488,48 +482,50 @@ header {
 
 
 /* Footer */
-  .book_table_footer {
-    background-color: #ac76ff;
-    color: white;
-    display: flex;
-    display: block;
-    margin-left: -10px;
-    margin-right: -10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100vw;
-    height: auto;
-  }
+.book-table-footer {
+  background-color: #ac76ff;
+  color: white;
+  display: block;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100vw;
+  height: auto;
+}
 
   .cookies {
     font-family: 'Roboto Condensed'; 
     font-size: 1rem;
     width: 100%;
-    text-align: center;    
+    text-align: center;  
+    margin-top: 10px;  
   }
 
-  .decline_accept_button {
+  .decline-accept-button {
     display: flex;
+    width: 100%;
+    margin-bottom: 10px;  
+    text-align: center; 
     justify-content: space-around;
-    margin-bottom: 10px;
   }
 
-  .decline_button {
+  .decline-button {
     text-transform: uppercase;
     font-size: 1.5rem;
     background-color:#fff136;
     border-style: none;
     border-radius: 10px;
     width: 30%;
-    height: 30px;
+    height: 35px;
   }
   
-  .accept_button {
+  .accept-button {
     text-transform: uppercase;
     font-size: 1.5rem;
     background-color: #00ff39;
     border-style: none;
     border-radius: 10px;
     width: 30%;
-    height: 30px;
+    height: 35px;
   }

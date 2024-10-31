@@ -4,58 +4,58 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
-.lettuce {
-  grid-column: 1 / span 4;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
+  .lettuce {
+    grid-column: 1 / span 4;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
 
-.lettuce_text{
-  grid-column: 1 / span 4;
-}
+  .lettuce-text{
+    grid-column: 1 / span 4;
+  }
 
 /* Menu Page 2 (Section 1) */
-.top_page2 {
+.top-page2 {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(6, 1fr);
 }
 
-  .food_1 {
+  .food-1 {
     grid-column: 1 / span 2;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .food_2 {
+  .food-2 {
     grid-column: 3 / span 2;     
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 
-  .food_3 {
+  .food-3 {
     grid-column: 5 / span 2;  
     width: 100%;
     height: 100%;
     object-fit: cover;  
   }
 
- /* Book a table (Page 3 section 1)*/
-  input {
-    width: 80%;
-  }
+/* Book a table (Page 3 section 1)*/
+input {
+  width: 80%;
+}
 
 /* Book a table (Page 3 section 2)*/
-   .background {
-    top: 0px;
-    bottom: 0px;
-  }
+.background {
+  top: 0px;
+  bottom: 0px;
+}
 
-  .box {
-    top: 0px;
-    bottom: 0px;
-    font-size: 2rem;
-  }
+.box {
+  top: 0px;
+  bottom: 0px;
+  font-size: 3rem;
+}

@@ -1,41 +1,35 @@
 /*The menu to the left*/
 header {
-  display: grid;
-  grid-column: 1;
-  position: fixed;
-  left: 0;
-  top: 0;
   height: 100%;
-  width: 120px;
+  width: 150px;
   display: flex; 
   justify-content: center;
   align-items: center;
-  border-right: 10px solid #ff0;
-  
+  border-right: 16px solid #ff0;
 }
   
   .restaurant {
-    font-size: 3.5rem;
+    font-size: 4rem;
     text-orientation: upright;
     writing-mode: vertical-lr;
     letter-spacing: -20px;
-    min-width: 0%;
     height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 70px;
     padding-left: 10px;
-    justify-content: center;
+    width: 10vw;
+    align-content: center;
+    min-width: 10%;
   }
 
-  .burger_menu {
-    left: 25px;
-  }
 
-  .menu_checkbox {
+/*Burger meny */
+.burger-menu {
+  left: 30px;
+}
+
+  .menu-checkbox {
     width: 70px;
     height: 70px;
-    left: 25px;
+    left: 30px;
     top: 5px;
   }
 
@@ -51,325 +45,292 @@ header {
 
   
 /* Top section (Page 1 section 1) */   
-.top_page1 {
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(12, 1fr);  
-    grid-template-rows: repeat(1, 1fr);
+.top-page1 {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);  
+  grid-template-rows: repeat(1, 1fr);
 }
 
-    .heading_1 {
-        grid-column: 4 / span 2;
-        grid-row: 1;
-        font-size: 3.8rem;
-        margin-left: 0%;
-        margin-right: 20px;  
-        margin-top: 140px;
-        align-items:end;
+  .heading-1 {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    font-size: 4rem;
+    margin-left: 0%;
+    margin-right: -350px;
+    margin-top: 135px; 
     }
 
-    .heading_2 {
-        grid-column: 2 / span 3;
-        grid-row: 1;
-        font-size: 10rem;
-        margin-left: 0%;
-        margin-right: -160px;
-        margin-top: 250px;
-        align-items: end;
-    }
+  .heading-2 {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    font-size: 10rem;
+    margin-left: 0%;
+    margin-right: -160px;
+    margin-top: 250px;  
+  }
 
-    .heading_3 {
-        grid-column: 2 / span 3;
-        grid-row: 1;
-        font-size: 4rem;
-        margin-left: 0%;
-        margin-right: -60px;
-        margin-top: 370px;
-        align-items: end;
-    }
+  .heading-3 {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    font-size: 4rem;
+    margin-left: 0%;
+    margin-right: -60px;
+    margin-top: 370px;    
+  }
 
-    .text_top {
-        grid-column: 6 / span 7; 
-        grid-row: 1;
-        font-size: 4em;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-bottom: 40px; 
+  .text-top {
+    grid-column: 6 / span 7; 
+    grid-row: 1;
+    font-size: 4em;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 40px; 
+  }
 
-    }
 
 /* Top section (Page 1 section 2) */ 
-    .bottom {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr); 
-        margin-left: -40px;
-    }
+.bottom {
+  grid-template-columns: repeat(12, 1fr);
+}
 
-    .lettuce {
-        grid-column: 2 / span 5;
-        grid-row: 1;
-        height: 100%;
-        border-right: 20px solid #ff0;
-    }
+  .lettuce {
+    grid-column: 1 / span 6;
+    grid-row: 1;     
+  }
 
-    .white_arrow {
-        grid-column: 2;
-        grid-row: 2;
-        height: 70px;
-        padding-left: 10px;
-        padding-right: 30px;
-    }
+  .white-arrow {
+    grid-column: 2;
+    grid-row: 2;
+    height: 70px;
+    padding-left: 10%;  
+  }
 
-    .lettuce_text {
-      grid-column: 7 / span 6;
-      height: auto;
-      margin-left: 20px;
-    }
+  .lettuce-text {
+    grid-column: 7 / span 6;
+    height: auto;
+    border-left: 16px solid #ff0;  
+  }
 
-    .text_bottom {
-        font-size: 4em;
-        padding-left: 20px;
-        padding-right: 50px;
-        margin-top: 20px;
-    }
+  .text-bottom {
+    font-size: 4em;
+    padding-left: 20px;
+    padding-right: 50px;
+    margin-top: 20px;
+  }
 
-    .explore_more {
-        grid-row: 1;
-        font-size: 4em;
-        align-content: end;
-        margin-left: 10px;
-    }
+  .explore-more {
+    grid-row: 1;
+    font-size: 4em;
+    align-content: end;
+    margin-left: 10px;
+  }
 
-      .black_arrow { 
-        width: 50px;
-      }
+  .black-arrow { 
+    width: 50px;
+  }
 
 
-      /* Menu Page 2 (Section 1) */
-      .top_page2 {
-        display: grid;
-        gap: 16px;
-        grid-template-columns: repeat(12, 1fr);
-        margin-left: -40px;
-        
-      }
+/* Menu Page 2 (Section 1) */
+.top-page2 {
+  grid-template-columns: repeat(12, 1fr);
+}
 
-      .food_1 {
-        grid-column: 2 / span 3;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-      }
+  .food-1 {
+    grid-column: 1 / span 4;
+  }
 
-      .food_2 {
-        grid-column: 5 / span 4;     
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+  .food-2 {
+    grid-column: 5 / span 4;     
+  }
 
-      .food_3 {
-        grid-column: 9 / span 4;  
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        
-      }
+  .food-3 {
+    grid-column: 9 / span 4;        
+  }
 
-    /* Menu Page 2 (Section 2) */
-    article {
-    display: grid;
-    gap: 16px;
-    grid-template-columns: repeat(12, 1fr);        
-    }
 
-      .menu_heading {
-        grid-column: 2 / span 4;
-        grid-row: 1;
-        font-size: 3.5rem;
-        align-content: center;
-        
-      }
+/* Menu Page 2 (Section 2) */
+article {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);        
+}
 
-      .menu_decription {
-        grid-column: 6 / span 6;
-        grid-row: 1;
-        font-size: 2rem;
-        align-content: center;
-      }
+  .menu-heading {
+    grid-column: 2 / span 4;
+    grid-row: 1;
+    font-size: 3.5rem;
+    align-content: center;
+  }
 
-      .menu_price {
-        grid-column: 12;
-        font-size: 3.5rem;
-        align-content: center;
-        text-align: right;
-        padding-right: 10px;
-      }
+  .menu-decription {
+    grid-column: 6 / span 6;
+    grid-row: 1;
+    font-size: 2rem;
+    text-align: left;
+    align-content: center;
+  }
 
-      .menu_icon_1 {
-        grid-column: 5;
-        grid-row: 1; 
-        margin-top: 20%;
-      }
+  .menu-price {
+    grid-column: 12;
+    font-size: 3.5rem;
+    text-align: right;
+    align-content: center;
+  }
 
-      .menu_icon_2 {
-        grid-column: 5;
-        grid-row: 1; 
-        margin-top: 20%;
-        margin-left: 30%
-      }
+  .menu-icon-1 {
+    grid-column: 5;
+    grid-row: 1; 
+    margin-top: 20%;
+    align-content: left; 
+  }
 
-      .menu_icon_3 {
-        grid-column: 4;
-        grid-row: 1;
-        margin-top: 20%;
-        margin-left: -40%;
-      }
+  .menu-icon-2 {
+    grid-column: 5;
+    grid-row: 1; 
+    margin-top: 20%;
+    margin-left: 30%
+  }
+
+  .menu-icon-3 {
+    grid-column: 4;
+    grid-row: 1;
+    margin-top: 20%;
+    margin-left: -40%;
+  }
       
 /* Book a table (Page 3 section 1)*/
-    form { 
-        display: grid;
-        gap: 16px;
-        grid-template-columns: repeat(12, 1fr);   
-        border-left: 16px solid white;  
-         
-        align-items: center;
-        
-        
-    }
+form { 
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(12, 1fr);   
+  border-left: 16px solid white;  
+  align-items: center;   
+}
 
-    .form_book_your_table {
-       grid-column: 2 / 5 span;     
-    }
+  .form-book-your-table {
+    grid-column: 2 / 5 span;     
+  }
 
-    .book_your_table {
-        grid-column: 2 / 5 span;
-        grid-row: 1;
-        font-size: 5rem;
-        margin-top: 20%;
-        margin-left: 30px;  
-        width: 100%;
-    }
+  .book-your-table {
+    grid-row: 1;
+    font-size: 5rem;
+    margin-top: 10%;
+    margin-left: 30px;  
+    width: 100%;
+  }
 
-    label {
-        grid-column: 2 / span 2;
-        font-size: 3em;
-        width: 200px;
-        margin-top: 10px;
-        margin-left: 30px;
-    }
+  label {
+    grid-column: 2 / span 2;
+    font-size: 3em;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 30px;
+  }
 
-    input {
-        grid-column: 4 / span 3;
-        width: 450px;
-        height: 50px;
-        border-radius: 20px;
-        margin-left: 30px;
-    }
+  input {
+    grid-column: 4 / span 3;
+    width:55%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 30px;
+  }
 
-    .cancle_request {
-        grid-column: 2 / span 5;
-        align-items: center;
-        margin-right: 100px;
-        gap: 30px;
-        margin-bottom: 100px;  
-        margin-right: 0px;
-        padding-right: 45px;
-        margin-left: 30px;
-        
-    }
+  .cancle-request {
+    grid-column: 2 / span 5;
+    align-items: center;
+    margin-bottom: 100px;  
+    margin-right: 0px;
+    padding-right: 45px;
+    margin-left: 30px;    
+  }
 
-    .cancle_button {
-        grid-column: 2 / span 2;
-        width: 350px;
-        height: 50px;
-        font-size: 3rem;
-        border-radius: 20px;   
-        padding-bottom: 60px;
-    }
+  .cancle-button {
+    grid-column: 2 / span 2;
+    width: 350px;
+    height: 50px;
+    font-size: 3rem;
+    border-radius: 20px;   
+    padding-bottom: 60px;
+  }
 
-    .request_button {
-        grid-column: 4 / span 2;
-        width: 350px;
-        height: 50px;
-        font-size: 3rem;
-        border-radius: 20px;  
-        padding-bottom: 60px;
-    }
+  .request-button {
+    grid-column: 4 / span 2;
+    width: 350px;
+    height: 50px;
+    font-size: 3rem;
+    border-radius: 20px;  
+    padding-bottom: 60px;
+  }
+
 
 /* Book a table (Page 3 section 2)*/
-    .book_a_table {
-        grid-column: 7 / span 5;
-        grid-row: 1 / span 2;
-        height: 100%;
-    }
+.book-a-table {
+  grid-column: 7 / span 5;
+  grid-row: 1 / span 2;
+  height: 100%;
+}
 
-    .background {
-        grid-column: 7 / span 5;
-        background-size: cover;
-        top: 30%;
-        left: 10%;
-        width: 100%;
-        height: 50%;
-    }
+  .background {
+    grid-column: 7 / span 5;
+    background-size: cover;
+    top: 25%;
+    left: 10%;
+    height: 50%;
+  }
 
-    .box {
-        grid-column: 7 / span 5;
-        font-size: 2.5rem;
-        text-shadow: -5px -5px rgb(0, 0, 0);
-        width: 100%;
-        height: 50%;
-        top: 30%;
-        left: 15%;
-        padding-left: 0%; 
-     }
+  .box {
+    grid-column: 7 / span 5;
+    font-size: 2.5rem;
+    text-shadow: -5px -5px rgb(0, 0, 0);
+    width: 100%;
+    height: 50%;
+    top: 25%;
+    left: 15%;
+    padding-left: 0%; 
+  }
 
 
 /* Footer */
-    .book_table_footer {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        gap: 16px;
-        height: 100px;
-        width: 100%;
-        position: relative; 
-        z-index: 2;
-        margin-right: 16px;
-        padding-right: 20px;
-        
-    }
+.book-table-footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  height: 100px;
+  width: 100%;
+  position: relative; 
+  z-index: 2;
+  margin-right: 16px;
+  padding-right: 20px;    
+}
 
-    .cookies {
-        grid-column: 2 / span 3;
-        grid-row: 1;
-        font-size: 2rem;
-        margin-left: 10%;
-        text-align: left;
-        width: 100%;
-    }
+  .cookies {
+    grid-column: 2 / span 3;
+    grid-row: 1;
+    font-size: 2rem;
+    margin-left: 10%;
+    text-align: left;
+  }
 
-    .decline_accept_button {
-      grid-column: 8 / span 5;
-      gap: 30px;
-      padding-top: 20px;
-    }
+  .decline-accept-button {
+    grid-column: 7 / span 6;
+    gap:30px;
+    padding-top: 20px;
+  }
 
-    .decline_button {
-        grid-column: 8 / span 3;
-        font-size: 3rem;
-        width: 350px;
-        height: 55px;
-        margin-left: 50px;
-        border-radius: 15px;
-    }
+  .decline-button {
+    grid-column: 8 / span 3;
+    font-size: 3rem;
+    width: 300px;
+    height: 55px;
+    border-radius: 15px;
+  }
 
-    .accept_button {
-        grid-column: 11 / span 3;
-        grid-row: 1;
-        font-size: 3rem;
-        width: 350px;
-        height: 55px;
-        margin-right: 40px;
-        border-radius: 15px;
-    }
+  .accept-button {
+    grid-column: 11 / span 3;
+    grid-row: 1;
+    font-size: 3rem;
+    width: 300px;
+    height: 55px;
+    border-radius: 15px;
+  }
