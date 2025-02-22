@@ -13,7 +13,7 @@ jobs:
           # Lägg till byggkommandon här om du använder en byggprocess
           # npm install && npm run build
           
-      - name: Debug: List files after build
+      - name: Debug
         run: ls -R
 
       - name: Upload artifact
