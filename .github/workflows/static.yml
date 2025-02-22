@@ -21,7 +21,7 @@ jobs:
         with:
           path: '.'  # Eller ändra till 'build' om du bygger något
 
-      - name: Debug: List files after artifact upload
+      - name: Debug
         run: ls -R
           
       - name: Deploy to GitHub Pages
