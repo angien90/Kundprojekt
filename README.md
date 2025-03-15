@@ -1,1 +1,5 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/3GX3QKax)
+## Kundprojektet
+Kundprojektet var vår andra uppgift i HTML och CSS kursen HT24. Det gick ut på att vi fick en färdig design som vi skulle koda upp. 
+
+## Betyg
+![image](https://github.com/user-attachments/assets/5d2ee47c-2e04-4daa-87b1-b44e6aa5c712)
